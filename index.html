@@ -92,6 +92,61 @@
             display: inline-block;
             margin-bottom: 0.5rem;
         }
+
+        /* Styles for the image modal */
+        #image-modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+            z-index: 1000;
+        }
+
+        #image-modal-content {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #1F2937; /* Match section background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            z-index: 1001;
+            max-width: 90%;
+            max-height: 90%;
+            overflow: auto;
+            position: relative; /* For the close button positioning */
+        }
+
+        #image-modal-image {
+            display: block;
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            max-height: 80vh; /* Adjust as needed */
+            border-radius: 4px;
+        }
+
+        #modal-close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        #modal-close-button:hover {
+            opacity: 1;
+        }
     </style>
 </head>
 <body class="bg-slate-900 text-gray-100">
@@ -107,9 +162,9 @@
              <div class="py-8 md:py-12"> <div class="bg-slate-700 p-6 md:p-8 rounded-lg shadow-xl max-w-4xl mx-auto">
                     <h2 class="text-xl md:text-2xl font-semibold mb-4 text-amber-400">[ IMPACTFUL IMAGE/VIDEO OF A MODERN AND SUCCESSFUL SHOPIFY STORE ]</h2>
                     <p class="text-slate-300 text-sm md:text-base">Here would be an image or video showcasing the potential and aesthetics of the stores we create.</p>
-                    <img src="https://placehold.co/800x450/374151/E2E8F0?text=Successful+Shopify+Store" alt="[Image of Successful Shopify Store]" class="mt-4 rounded-md mx-auto w-full max-w-2xl h-auto object-cover shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/800x450/374151/FFF?text=Error+loading+image';">
+                    <img src="https://placehold.co/800x450/374151/E2E8F0?text=Successful+Shopify+Store" alt="Image of Successful Shopify Store" class="mt-4 rounded-md mx-auto w-full max-w-2xl h-auto object-cover shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/800x450/374151/FFF?text=Error+loading+image';">
                 </div>
-            </div>
+             </div>
             <a href="#packages" class="btn-primary text-gray-900 font-bold py-4 px-10 rounded-lg text-xl md:text-2xl inline-block shadow-lg transform hover:scale-105">
                 🚀 I Want My UNIQUE Store Ready to Sell!
             </a>
@@ -236,16 +291,26 @@
                 </div>
             </div>
             <div class="bg-slate-700 p-6 md:p-8 rounded-lg shadow-xl max-w-5xl mx-auto mb-8">
-                 <h3 class="text-lg md:text-xl font-semibold mb-6 text-emerald-400">[ SCREENSHOTS OF 5-STAR REVIEWS ]</h3>
+                 <h3 class="text-lg md:text-xl font-semibold mb-6 text-emerald-400">¡Discover What Our Happy Clients Are Saying! ⭐⭐⭐⭐⭐</h3>
                  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <img src="images/review-image-1.png" alt="[Screenshot of 5-Star Customer Review 1]" class="rounded-md mx-auto w-full h-auto object-cover shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFF?text=Error+loading+image';">
-                    <img src="images/review-image-2.png" alt="[Screenshot of 5-Star Customer Review 2]" class="rounded-md mx-auto w-full h-auto object-cover shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFF?text=Error+loading+image';">
-                    <img src="images/review-image-3.png" alt="[Screenshot of 5-Star Customer Review 3]" class="rounded-md mx-auto w-full h-auto object-cover shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFF?text=Error+loading+image';">
+                     <img src="images/review-image-1.png" alt="Screenshot of 5-Star Customer Review 1" class="review-screenshot rounded-md mx-auto w-full h-auto object-cover shadow-md cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFF?text=Error+loading+image';">
+                     <img src="images/review-image-2.png" alt="Screenshot of 5-Star Customer Review 2" class="review-screenshot rounded-md mx-auto w-full h-auto object-cover shadow-md cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFF?text=Error+loading+image';">
+                     <img src="images/review-image-3.png" alt="Screenshot of 5-Star Customer Review 3" class="review-screenshot rounded-md mx-auto w-full h-auto object-cover shadow-md cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFF?text=Error+loading+image';">
+                     <img src="images/review-image-4.png" alt="Screenshot of 5-Star Customer Review 4" class="review-screenshot rounded-md mx-auto w-full h-auto object-cover shadow-md cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFF?text=Error+loading+image';">
+                     <img src="images/review-image-5.png" alt="Screenshot of 5-Star Customer Review 5" class="review-screenshot rounded-md mx-auto w-full h-auto object-cover shadow-md cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFF?text=Error+loading+image';">
+                     <img src="images/review-image-6.png" alt="Screenshot of 5-Star Customer Review 6" class="review-screenshot rounded-md mx-auto w-full h-auto object-cover shadow-md cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFF?text=Error+loading+image';">
                  </div>
-            </div>
+             </div>
             <p class="mt-12 text-lg md:text-xl text-slate-300">Join the community of sellers who are redefining success. <br><strong>We are the undisputed leaders on Fiverr for a reason.</strong></p>
         </div>
     </section>
+
+    <div id="image-modal-overlay">
+        <div id="image-modal-content">
+            <button id="modal-close-button">&times;</button>
+            <img id="image-modal-image" src="" alt="Enlarged Review Screenshot">
+        </div>
+    </div>
 
     <section class="py-16 md:py-20 bg-slate-900">
         <div class="container mx-auto px-6 text-center">
@@ -359,7 +424,7 @@
                             <li class="bullet-check">🎁 <strong>EXCLUSIVE BONUS: 7 Days of FREE Mentoring.</strong></li>
                         </ul>
                     </div>
-                     <a href="#contact_winner" class="btn-primary text-gray-900 font-bold py-3 px-8 rounded-lg text-lg w-full block mt-auto">I Want the GUARANTEED WINNER!</a>
+                    <a href="#contact_winner" class="btn-primary text-gray-900 font-bold py-3 px-8 rounded-lg text-lg w-full block mt-auto">I Want the GUARANTEED WINNER!</a>
                 </div>
                 
                 <div class="package-card card-bg p-6 md:p-8 rounded-xl shadow-xl flex flex-col justify-between transform hover:scale-105 transition-transform duration-300">
@@ -395,10 +460,20 @@
     <section class="py-16 md:py-20 bg-slate-900">
         <div class="container mx-auto px-6 text-center max-w-4xl">
             <h2 class="section-title">Who is Behind Your Success? 🤝</h2>
-            <div class="bg-slate-800 p-6 md:p-8 rounded-lg shadow-xl mb-8 mx-auto max-w-md">
-                <h3 class="text-lg md:text-xl font-semibold mb-4 text-emerald-400">[ PHOTO OF DIVISHHA AND TEAM ]</h3>
-                <img src="images/divishha-team-photo.jpg" alt="[Photo of Divishha and Team]" class="rounded-lg mx-auto w-full h-auto object-cover shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/400x300/2D3748/FFF?text=Error+loading+image';">
-            </div>
+            <div class="bg-slate-800 p-6 md:p-8 rounded-lg shadow-xl mb-8 mx-auto w-full max-w-md md:max-w-xl"> <h3 class="text-lg md:text-xl font-semibold mb-4 text-emerald-400">
+        <span class="text-gray-100 text-2xl md:text-3xl font-extrabold block">Divlshha G.</span>
+        <span class="text-slate-300 text-base md:text-lg block mb-2">Passionately Over Dellvering</span>
+        <div class="flex items-center justify-center space-x-2">
+            <span class="text-amber-400 text-xl md:text-2xl">★★★★★</span>
+            <span class="text-gray-100 text-lg md:text-xl font-semibold">4.9</span>
+            <span class="text-slate-400 text-sm md:text-base">(6,267)</span>
+            <span class="bg-amber-500 text-gray-900 text-xs md:text-sm font-bold px-2 py-0.5 rounded-full flex items-center space-x-1">
+                <span>Top Rated</span>
+                <span class="text-lg leading-none">♦♦♦</span>
+            </span>
+        </div>
+    </h3>
+                <img src="images/divishha-team-photo.jpg" alt="Photo of Divishha and Team" class="rounded-lg mx-auto w-full h-auto object-cover shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/600x450/2D3748/FFF?text=Error+loading+image';"> </div>
             <p class="text-lg md:text-xl text-slate-300 leading-relaxed mb-6">
                 Hi! I'm Divishha, the founder behind this mission. Together with my passionate team, we've spent over <strong>7 years creating Shopify stores that convert</strong> and boosting dropshipping businesses to stardom. We're not just designers or developers; we are <strong>e-commerce strategists</strong> who live and breathe the online commerce game.
             </p>
@@ -452,6 +527,33 @@
                     console.error("Error finding element for smooth scroll:", error);
                 }
             });
+        });
+
+        // Image Modal Functionality
+        const reviewScreenshots = document.querySelectorAll('.review-screenshot');
+        const imageModalOverlay = document.getElementById('image-modal-overlay');
+        const imageModalContent = document.getElementById('image-modal-content');
+        const imageModalImage = document.getElementById('image-modal-image');
+        const modalCloseButton = document.getElementById('modal-close-button');
+
+        reviewScreenshots.forEach(image => {
+            image.addEventListener('click', () => {
+                imageModalImage.src = image.src;
+                imageModalOverlay.style.display = 'block';
+                imageModalContent.style.display = 'block';
+            });
+        });
+
+        modalCloseButton.addEventListener('click', () => {
+            imageModalOverlay.style.display = 'none';
+            imageModalContent.style.display = 'none';
+        });
+
+        imageModalOverlay.addEventListener('click', (e) => {
+            if (e.target === imageModalOverlay) {
+                imageModalOverlay.style.display = 'none';
+                imageModalContent.style.display = 'none';
+            }
         });
     </script>
 
