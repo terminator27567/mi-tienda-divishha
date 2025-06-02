@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divishha | Your Unique & Profitable Shopify Store in 2025</title>
+    <title>Divishha | Your Unique & Profitable Shopify Store in 2025</title> 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,33 @@
         body {
             font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
+            background-color: #0F172A; /* slate-900 */
+            color: #E2E8F0; /* slate-200 or gray-100 equivalent */
+            padding-top: 50px; /* Added padding to prevent content overlap by fixed banner */
+        }
+        .top-banner {
+            background-color: #EF4444; /* red-500, as an example, can be changed */
+            /* Or using a gradient from your theme:
+            background: linear-gradient(90deg, #F59E0B, #D97706); 
+            */
+            color: white;
+            padding: 0.75rem 1rem; /* py-3 px-4 */
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100; /* Ensure it's above other content */
+            font-size: 0.875rem; /* text-sm */
+            line-height: 1.25rem; /* leading-5 */
+        }
+        .top-banner a {
+            text-decoration: underline;
+            font-weight: bold;
+            transition: opacity 0.3s ease;
+        }
+        .top-banner a:hover {
+            opacity: 0.8;
         }
         .hero-gradient {
             background: linear-gradient(180deg, #1a202c 0%, #2d3748 100%);
@@ -52,6 +79,9 @@
         .section-title {
             font-size: 2.25rem; /* text-3xl */
             line-height: 2.5rem; /* leading-9 */
+            font-weight: 800; /* Equivalent to font-extrabold */
+            margin-bottom: 1.5rem; /* Equivalent to mb-6 */
+            color: #F3F4F6; /* gray-100 */
         }
         @media (min-width: 768px) { /* md breakpoint */
             .section-title {
@@ -59,25 +89,19 @@
                 line-height: 1;
             }
         }
-        .section-title {
-            font-weight: 800; /* Equivalent to font-extrabold */
-            margin-bottom: 1.5rem; /* Equivalent to mb-6 */
-        }
         .section-subtitle {
             font-size: 1.125rem; /* text-lg */
-        }
-        @media (min-width: 768px) { /* md breakpoint */
-            .section-subtitle {
-                font-size: 1.25rem; /* text-xl */
-            }
-        }
-        .section-subtitle {
             color: #D1D5DB; /* gray-300 */
             margin-bottom: 2.5rem; /* Equivalent to mb-10 */
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
             line-height: 1.75;
+        }
+        @media (min-width: 768px) { /* md breakpoint */
+            .section-subtitle {
+                font-size: 1.25rem; /* text-xl */
+            }
         }
         .package-card {
             border: 2px solid #4B5563; /* gray-600 */
@@ -104,7 +128,6 @@
             background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
             z-index: 1000;
         }
-
         #image-modal-content {
             display: none;
             position: fixed;
@@ -121,7 +144,6 @@
             overflow: auto;
             position: relative; /* For the close button positioning */
         }
-
         #image-modal-image {
             display: block;
             width: auto;
@@ -130,7 +152,6 @@
             max-height: 80vh; /* Adjust as needed */
             border-radius: 4px;
         }
-
         #modal-close-button {
             position: absolute;
             top: 10px;
@@ -143,33 +164,44 @@
             opacity: 0.7;
             transition: opacity 0.3s ease;
         }
-
         #modal-close-button:hover {
             opacity: 1;
         }
+
+        /* FAQ Styles */
+        .faq-answer {
+            transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+            overflow: hidden;
+        }
+        .faq-question .faq-icon {
+            transition: transform 0.3s ease;
+        }
     </style>
 </head>
-<body class="bg-slate-900 text-gray-100">
-
+<body>
+    <div class="top-banner">
+        <span>🔥 Limited Time: Get Your Unique & Profitable Shopify Store Ready for 2025! <a href="#packages">Explore Packages Now!</a></span>
+    </div>
     <section class="hero-gradient py-16 md:py-24 text-center">
         <div class="container mx-auto px-6">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight text-gray-100">
                 Tired of Selling the Same as Everyone Else? 🤔<br class="hidden md:block"> In 2025, Dropshipping Success is <span class="text-amber-400">YOUR UNIQUE BRAND.</span><br> We Create It With You!
             </h1>
             <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-3xl mx-auto">
                 We deliver a <strong>Turnkey Shopify Store</strong>: with ALREADY Proven Products, 100% Exclusive Brand Design, and Suppliers with Ultra-Fast Shipping (8-12 Days). 🚚💨
             </p>
-             <div class="py-8 md:py-12"> <div class="bg-slate-700 p-6 md:p-8 rounded-lg shadow-xl max-w-4xl mx-auto">
+            <div class="py-8 md:py-12">
+                <div class="bg-slate-700 p-6 md:p-8 rounded-lg shadow-xl max-w-4xl mx-auto">
                     <h2 class="text-xl md:text-2xl font-semibold mb-4 text-amber-400">[ IMPACTFUL IMAGE/VIDEO OF A MODERN AND SUCCESSFUL SHOPIFY STORE ]</h2>
                     <p class="text-slate-300 text-sm md:text-base">Here would be an image or video showcasing the potential and aesthetics of the stores we create.</p>
-                    <img src="https://placehold.co/800x450/374151/E2E8F0?text=Successful+Shopify+Store" alt="Image of Successful Shopify Store" class="mt-4 rounded-md mx-auto w-full max-w-2xl h-auto object-cover shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/800x450/374151/FFF?text=Error+loading+image';">
+                    <img src="https://placehold.co/800x450/374151/E2E8F0?text=Successful+Shopify+Store+Example" alt="Image of Successful Shopify Store" class="mt-4 rounded-md mx-auto w-full max-w-2xl h-auto object-cover shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/800x450/374151/FFF?text=Error+loading+image';">
                 </div>
-             </div>
+            </div>
             <a href="#packages" class="btn-primary text-gray-900 font-bold py-4 px-10 rounded-lg text-xl md:text-2xl inline-block shadow-lg transform hover:scale-105">
                 🚀 I Want My UNIQUE Store Ready to Sell!
             </a>
             <p class="mt-8 text-lg text-slate-300">
-                🏆 More than <strong>6,500 entrepreneurs</strong> have already transformed their future with us, with a <strong>99.7% 5-star satisfaction rate!</strong> ⭐⭐⭐⭐⭐
+                🏆 More than <strong>6,200 entrepreneurs</strong> have already transformed their future with us, with a <strong>99.7% 5-star satisfaction rate!</strong> ⭐⭐⭐⭐⭐
             </p>
         </div>
     </section>
@@ -211,7 +243,7 @@
                     <h3 class="text-xl font-semibold mb-2 text-amber-400">Unreliable Suppliers:</h3>
                     <p class="text-slate-300 text-sm md:text-base">Inconsistent quality, customs issues, or zero control?</p>
                 </div>
-                 <div class="card-bg p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 md:col-span-2 lg:col-span-1 lg:col-start-2">
+                <div class="card-bg p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 md:col-span-2 lg:col-span-1 lg:col-start-2">
                     <p class="text-3xl mb-3">💸</p>
                     <h3 class="text-xl font-semibold mb-2 text-amber-400">Uncertain Investment:</h3>
                     <p class="text-slate-300 text-sm md:text-base">Fear of putting in effort and money... only to fail?</p>
@@ -263,7 +295,7 @@
                     <p class="text-slate-300 leading-relaxed text-sm md:text-base">Your store designed to SELL. High conversion rates and SEO-friendly URLs.</p>
                 </div>
             </div>
-             <p class="mt-12 text-lg md:text-xl text-slate-300 max-w-3xl mx-auto">
+            <p class="mt-12 text-lg md:text-xl text-slate-300 max-w-3xl mx-auto">
                 💰 With over <strong>7 years of experience</strong> and a team of passionate experts, we transform your vision into a unique, profitable Shopify store ready for the AI era. Look professional from Day 1.
             </p>
         </div>
@@ -275,14 +307,14 @@
             <p class="section-subtitle">In the online world, trust is GOLD. We don't ask you to take our word for it. <strong>Let the results speak for themselves.</strong></p>
             <div class="grid md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto mb-12">
                 <div class="card-bg p-6 md:p-8 rounded-xl shadow-xl text-center">
-                    <p class="text-4xl md:text-5xl font-extrabold text-amber-400 mb-3">🌍 +6,500</p>
+                    <p class="text-4xl md:text-5xl font-extrabold text-amber-400 mb-3">🌍 +6,200</p>
                     <p class="text-lg md:text-xl text-slate-300">Entrepreneurs Empowered</p>
                     <p class="text-xs md:text-sm text-slate-400">(#1 Choice on Fiverr)</p>
                 </div>
                 <div class="card-bg p-6 md:p-8 rounded-xl shadow-xl text-center">
                     <p class="text-4xl md:text-5xl font-extrabold text-amber-400 mb-3">🌟 99.7%</p>
                     <p class="text-lg md:text-xl text-slate-300">5-Star Success Rate</p>
-                     <p class="text-xs md:text-sm text-slate-400">(Industry-leading satisfaction)</p>
+                    <p class="text-xs md:text-sm text-slate-400">(Industry-leading satisfaction)</p>
                 </div>
                 <div class="card-bg p-6 md:p-8 rounded-xl shadow-xl text-center">
                     <p class="text-4xl md:text-5xl font-extrabold text-amber-400 mb-3">💸 $10K+</p>
@@ -291,16 +323,16 @@
                 </div>
             </div>
             <div class="bg-slate-700 p-6 md:p-8 rounded-lg shadow-xl max-w-5xl mx-auto mb-8">
-                 <h3 class="text-lg md:text-xl font-semibold mb-6 text-emerald-400">¡Discover What Our Happy Clients Are Saying! ⭐⭐⭐⭐⭐</h3>
-                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                     <img src="images/review-image-1.png" alt="Screenshot of 5-Star Customer Review 1" class="review-screenshot rounded-md mx-auto w-full h-auto object-cover shadow-md cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFF?text=Error+loading+image';">
-                     <img src="images/review-image-2.png" alt="Screenshot of 5-Star Customer Review 2" class="review-screenshot rounded-md mx-auto w-full h-auto object-cover shadow-md cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFF?text=Error+loading+image';">
-                     <img src="images/review-image-3.png" alt="Screenshot of 5-Star Customer Review 3" class="review-screenshot rounded-md mx-auto w-full h-auto object-cover shadow-md cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFF?text=Error+loading+image';">
-                     <img src="images/review-image-4.png" alt="Screenshot of 5-Star Customer Review 4" class="review-screenshot rounded-md mx-auto w-full h-auto object-cover shadow-md cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFF?text=Error+loading+image';">
-                     <img src="images/review-image-5.png" alt="Screenshot of 5-Star Customer Review 5" class="review-screenshot rounded-md mx-auto w-full h-auto object-cover shadow-md cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFF?text=Error+loading+image';">
-                     <img src="images/review-image-6.png" alt="Screenshot of 5-Star Customer Review 6" class="review-screenshot rounded-md mx-auto w-full h-auto object-cover shadow-md cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFF?text=Error+loading+image';">
-                 </div>
-             </div>
+                <h3 class="text-lg md:text-xl font-semibold mb-6 text-emerald-400">Discover What Our Happy Clients Are Saying! ⭐⭐⭐⭐⭐</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    <img src="images/review-image-1" alt="Screenshot of 5-Star Customer Review 1" class="review-screenshot rounded-md mx-auto w-full h-auto object-cover shadow-md cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFF?text=Error+loading+image';">
+                    <img src="images/review-image-2" alt="Screenshot of 5-Star Customer Review 2" class="review-screenshot rounded-md mx-auto w-full h-auto object-cover shadow-md cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFF?text=Error+loading+image';">
+                    <img src="images/review-image-3" alt="Screenshot of 5-Star Customer Review 3" class="review-screenshot rounded-md mx-auto w-full h-auto object-cover shadow-md cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFF?text=Error+loading+image';">
+                    <img src="images/review-image-4" alt="Screenshot of 5-Star Customer Review 4" class="review-screenshot rounded-md mx-auto w-full h-auto object-cover shadow-md cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFF?text=Error+loading+image';">
+                    <img src="images/review-image-5" alt="Screenshot of 5-Star Customer Review 5" class="review-screenshot rounded-md mx-auto w-full h-auto object-cover shadow-md cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFF?text=Error+loading+image';">
+                    <img src="images/review-image-6" alt="Screenshot of 5-Star Customer Review 6" class="review-screenshot rounded-md mx-auto w-full h-auto object-cover shadow-md cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/600x400/374151/FFF?text=Error+loading+image';">
+                </div>
+            </div>
             <p class="mt-12 text-lg md:text-xl text-slate-300">Join the community of sellers who are redefining success. <br><strong>We are the undisputed leaders on Fiverr for a reason.</strong></p>
         </div>
     </section>
@@ -368,7 +400,7 @@
                 <div class="card-bg p-6 md:p-8 rounded-xl shadow-lg border-2 border-red-500">
                     <h3 class="text-xl md:text-2xl font-bold mb-3 text-red-500">❌ Myth #2: "Store design doesn't matter."</h3>
                     <p class="text-slate-300 mb-4 text-sm md:text-base">A generic store scares away customers and destroys trust.</p>
-                     <div class="bg-slate-800 p-4 rounded-lg">
+                    <div class="bg-slate-800 p-4 rounded-lg">
                         <h4 class="text-lg md:text-xl font-semibold text-emerald-400 mb-2">✅ Reality with Divishha:</h4>
                         <p class="text-slate-300 text-sm md:text-base">Huge mistake! We give you a <strong>100% UNIQUE and branded store</strong>, designed by experts to CONVERT. Your visual identity will be professional and unforgettable.</p>
                     </div>
@@ -376,7 +408,7 @@
                 <div class="card-bg p-6 md:p-8 rounded-xl shadow-lg border-2 border-red-500">
                     <h3 class="text-xl md:text-2xl font-bold mb-3 text-red-500">❌ Myth #3: "Support vanishes after delivery."</h3>
                     <p class="text-slate-300 mb-4 text-sm md:text-base">Being left alone with doubts is a recipe for failure.</p>
-                     <div class="bg-slate-800 p-4 rounded-lg">
+                    <div class="bg-slate-800 p-4 rounded-lg">
                         <h4 class="text-lg md:text-xl font-semibold text-emerald-400 mb-2">✅ Reality with Divishha:</h4>
                         <p class="text-slate-300 text-sm md:text-base">Never! We offer <strong>Lifetime Support Included.</strong> You'll never be alone. We guide you step by step, like an expert co-pilot!</p>
                     </div>
@@ -449,10 +481,10 @@
                 <p class="text-lg md:text-xl text-slate-200 mb-4">
                     With the purchase of <strong>ANY package</strong>, you'll receive FREE our valuable <strong>Advanced Dropshipping Guides and PRO Facebook Ads Strategies.</strong>
                 </p>
-                <p class="text-xl md:text-2xl text-slate-100 font-semibold">Expert knowledge to scale your business like a pro! 📚💰</p>
+                <p class="text-xl md:text-2xl text-gray-100 font-semibold">Expert knowledge to scale your business like a pro! 📚💰</p>
             </div>
             <p class="mt-8 text-base md:text-lg text-slate-400">
-                At Divishha, we have over <strong>7 years of experience</strong>, have empowered +<strong>6,500 clients</strong> with a <strong>99.7% 5-star success rate</strong>. <br>We are <strong>Certified Shopify Partners</strong>. ✅
+                At Divishha, we have over <strong>7 years of experience</strong>, have empowered +<strong>6,200 clients</strong> with a <strong>99.7% 5-star success rate</strong>. <br>We are <strong>Certified Shopify Partners</strong>. ✅
             </p>
         </div>
     </section>
@@ -460,32 +492,37 @@
     <section class="py-16 md:py-20 bg-slate-900">
         <div class="container mx-auto px-6 text-center max-w-4xl">
             <h2 class="section-title">Who is Behind Your Success? 🤝</h2>
-            <div class="bg-slate-800 p-6 md:p-8 rounded-lg shadow-xl mb-8 mx-auto w-full max-w-md md:max-w-xl"> <h3 class="text-lg md:text-xl font-semibold mb-4 text-emerald-400">
-        <span class="text-gray-100 text-2xl md:text-3xl font-extrabold block">Divlshha G.</span>
-        <span class="text-slate-300 text-base md:text-lg block mb-2">Passionately Over Dellvering</span>
-        <div class="flex items-center justify-center space-x-2">
-            <span class="text-amber-400 text-xl md:text-2xl">★★★★★</span>
-            <span class="text-gray-100 text-lg md:text-xl font-semibold">4.9</span>
-            <span class="text-slate-400 text-sm md:text-base">(6,267)</span>
-            <span class="bg-amber-500 text-gray-900 text-xs md:text-sm font-bold px-2 py-0.5 rounded-full flex items-center space-x-1">
-                <span>Top Rated</span>
-                <span class="text-lg leading-none">♦♦♦</span>
-            </span>
-        </div>
-    </h3>
-                <img src="images/divishha-team-photo.jpg" alt="Photo of Divishha and Team" class="rounded-lg mx-auto w-full h-auto object-cover shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/600x450/2D3748/FFF?text=Error+loading+image';"> </div>
+            <div class="bg-slate-800 p-6 md:p-8 rounded-lg shadow-xl mb-8 mx-auto w-full max-w-md md:max-w-xl">
+                <h3 class="text-lg md:text-xl font-semibold mb-4 text-emerald-400">
+                    <span class="text-gray-100 text-2xl md:text-3xl font-extrabold block">Divishha G. & Team</span>
+                    <span class="text-slate-300 text-base md:text-lg block mb-2">Passionately Over-Delivering for Your Success</span>
+                    <div class="flex items-center justify-center space-x-2">
+                        <span class="text-amber-400 text-xl md:text-2xl">★★★★★</span>
+                        <span class="text-gray-100 text-lg md:text-xl font-semibold">4.9</span>
+                        <span class="text-slate-400 text-sm md:text-base">(6,200)</span>
+                        <span class="bg-amber-500 text-gray-900 text-xs md:text-sm font-bold px-2 py-0.5 rounded-full flex items-center space-x-1">
+                            <span>Top Rated</span>
+                            <span class="text-lg leading-none">♦♦♦</span>
+                        </span>
+                    </div>
+                    <p class="text-sm text-slate-400 mt-2">
+                        on <strong class="text-[#1DBF73] font-bold">fiverr</strong><span class="text-[#1DBF73] font-bold text-xl leading-none">.</span>
+                    </p>
+                </h3>
+                <img src="https://images.unsplash.com/photo-1622675363311-3e1904dc1885?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Diverse team collaborating and smiling, working together for success" class="rounded-lg mx-auto w-full h-auto object-cover shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/600x450/2D3748/FFF?text=Error+loading+image';">
+            </div>
             <p class="text-lg md:text-xl text-slate-300 leading-relaxed mb-6">
-                Hi! I'm Divishha, the founder behind this mission. Together with my passionate team, we've spent over <strong>7 years creating Shopify stores that convert</strong> and boosting dropshipping businesses to stardom. We're not just designers or developers; we are <strong>e-commerce strategists</strong> who live and breathe the online commerce game.
+                Behind your success is a passionate team with over <strong class="text-emerald-400">7 years of experience</strong> creating converting Shopify stores and boosting dropshipping businesses to stardom. As <strong class="text-amber-400">Top Rated Sellers on Fiverr</strong>, we are not just designers or developers; we are <strong class="text-amber-400">e-commerce strategists</strong> who live and breathe the world of online commerce.
             </p>
             <p class="text-lg md:text-xl text-slate-300 leading-relaxed">
-                We put all our knowledge and experience at your service so you too can achieve the success you deserve. <strong class="text-amber-400">Our passion is to transform your aspirations into a profitable and exciting reality.</strong> We're here to help you build the brand of your dreams!
+                We put all our knowledge and experience at your service so you too can achieve the success you deserve. We are passionate about <strong class="text-amber-400">transforming your aspirations into a profitable and exciting reality.</strong> We are here to help you build the brand of your dreams!
             </p>
         </div>
     </section>
 
     <section class="hero-gradient py-16 md:py-24 text-center">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight text-gray-100">
                 Your Moment is <span class="text-amber-400">NOW:</span><br> Launch a Brand the Market <span class="underline">CANNOT IGNORE</span> 🚀
             </h2>
             <p class="text-lg md:text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
@@ -497,30 +534,143 @@
             <a href="#packages" class="btn-accent text-white font-bold py-4 px-10 rounded-lg text-xl md:text-2xl inline-block shadow-lg transform hover:scale-105">
                 🔥 Yes, I Want My UNIQUE and Profitable Store NOW!
             </a>
-            <p class="mt-8 text-base md:text-lg text-slate-400">
-                The future of Dropshipping in 2025 is NOW, and competition will be fierce. <br><strong>Don't get left behind. Launch with the confidence of experts.</strong>
-            </p>
         </div>
     </section>
 
-    <footer class="text-center py-8 bg-slate-900 border-t border-slate-700">
-        <p class="text-slate-400 text-sm md:text-base">&copy; <span id="currentYear"></span> Divishha. All rights reserved.</p>
+    <section id="faq" class="section-bg py-16 md:py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="section-title">Have Questions? <span class="text-amber-400">We Have Clear Answers.</span></h2>
+            <p class="section-subtitle">Find quick answers to the most common doubts about our Shopify store creation service.</p>
+            <div class="max-w-3xl mx-auto text-left space-y-4 md:space-y-6 mt-10">
+                <div class="faq-item bg-slate-800 p-5 rounded-lg shadow-md">
+                    <button class="faq-question w-full text-left flex justify-between items-center text-lg font-semibold text-amber-400 focus:outline-none group">
+                        <span class="group-hover:text-amber-300 transition-colors duration-200">Why are your prices so affordable if the service is so premium?</span>
+                        <span class="faq-icon transform transition-transform duration-300 text-2xl text-slate-400 group-hover:text-amber-300">+</span>
+                    </button>
+                    <div class="faq-answer text-slate-300 mt-3 text-base hidden leading-relaxed">
+                        <p>Our main goal is to offer you a profitable store at an accessible price. We firmly believe in building long-term relationships. We know that not everyone has thousands of dollars to start. By offering such a competitive price, we aim for your quick success so that, ideally, you come back to us for future stores or recommend us. The efficiency and experience of our in-house team of over 7 years allow us to optimize processes and pass those savings on to you.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-slate-800 p-5 rounded-lg shadow-md">
+                    <button class="faq-question w-full text-left flex justify-between items-center text-lg font-semibold text-amber-400 focus:outline-none group">
+                        <span class="group-hover:text-amber-300 transition-colors duration-200">Do you use generic templates or AI tools to create stores?</span>
+                        <span class="faq-icon transform transition-transform duration-300 text-2xl text-slate-400 group-hover:text-amber-300">+</span>
+                    </button>
+                    <div class="faq-answer text-slate-300 mt-3 text-base hidden leading-relaxed">
+                        <p>Not at all! Unlike other freelancers, our stores are not one-size-fits-all. All our stores are 100% unique in design, theme, colors, text, and images, adapting to your specific tastes and preferences. We have an expert in-house team of graphic designers, copywriters, and developers. While AI is a useful tool, we believe it cannot surpass the creativity and practical human experience necessary to design a truly unique and branded Shopify dropshipping store.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-slate-800 p-5 rounded-lg shadow-md">
+                    <button class="faq-question w-full text-left flex justify-between items-center text-lg font-semibold text-amber-400 focus:outline-none group">
+                        <span class="group-hover:text-amber-300 transition-colors duration-200">How quickly can I see results/sales? Is it guaranteed?</span>
+                        <span class="faq-icon transform transition-transform duration-300 text-2xl text-slate-400 group-hover:text-amber-300">+</span>
+                    </button>
+                    <div class="faq-answer text-slate-300 mt-3 text-base hidden leading-relaxed">
+                        <p>Although we have a very high success rate and fully trust the quality of our work, we cannot guarantee sales. The final success of your store depends on how seriously you take your business and how you implement the strategies we provide. However, we give you all the tools to maximize your success potential: a branded website with a high conversion rate, products with a conversion history, sales-boosting apps, private suppliers with fast shipping (8-12 days), lifetime support, and FREE bonuses like Dropshipping guides and Facebook Ads strategies. We have helped over 6,200 clients with a 99.7% 5-star success rate, the highest in the industry.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-slate-800 p-5 rounded-lg shadow-md">
+                    <button class="faq-question w-full text-left flex justify-between items-center text-lg font-semibold text-amber-400 focus:outline-none group">
+                        <span class="group-hover:text-amber-300 transition-colors duration-200">Do I need prior experience in Shopify or dropshipping?</span>
+                        <span class="faq-icon transform transition-transform duration-300 text-2xl text-slate-400 group-hover:text-amber-300">+</span>
+                    </button>
+                    <div class="faq-answer text-slate-300 mt-3 text-base hidden leading-relaxed">
+                        <p>No prior experience in Shopify or dropshipping is necessary. We are here to guide you! We offer lifetime support included at no additional charge and with no time limit. We are patient with clients who have little experience and will hold your hand every step of the way, answering all your questions. Our mission is to empower entrepreneurs to succeed, and that includes providing you with all the guidance and support you need, even following up after delivery.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-slate-800 p-5 rounded-lg shadow-md">
+                    <button class="faq-question w-full text-left flex justify-between items-center text-lg font-semibold text-amber-400 focus:outline-none group">
+                        <span class="group-hover:text-amber-300 transition-colors duration-200">How do I choose winning products? Are they included?</span>
+                        <span class="faq-icon transform transition-transform duration-300 text-2xl text-slate-400 group-hover:text-amber-300">+</span>
+                    </button>
+                    <div class="faq-answer text-slate-300 mt-3 text-base hidden leading-relaxed">
+                        <p>For your peace of mind and success, at Divishha we not only create your store, but we also ensure it starts on the right foot by including internally tested products with a proven conversion history that have already proven effective. We have a dedicated team that tests products daily. Thus, you don't have to "reinvent the wheel" or make the mistakes that 95%+ of people make, as we only incorporate those that have worked. Niche research is also included. We provide you with the proven mechanism to satisfy the desire to find profitable products.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-slate-800 p-5 rounded-lg shadow-md">
+                    <button class="faq-question w-full text-left flex justify-between items-center text-lg font-semibold text-amber-400 focus:outline-none group">
+                        <span class="group-hover:text-amber-300 transition-colors duration-200">What about shipping times? Will they be very long?</span>
+                        <span class="faq-icon transform transition-transform duration-300 text-2xl text-slate-400 group-hover:text-amber-300">+</span>
+                    </button>
+                    <div class="faq-answer text-slate-300 mt-3 text-base hidden leading-relaxed">
+                        <p>We understand the concern about shipping times in traditional dropshipping. That's why our service includes access to private suppliers with fast shipping times, usually 8 to 12 days. We address this common problem directly, offering you a solution that significantly improves your customer's experience.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-slate-800 p-5 rounded-lg shadow-md">
+                    <button class="faq-question w-full text-left flex justify-between items-center text-lg font-semibold text-amber-400 focus:outline-none group">
+                        <span class="group-hover:text-amber-300 transition-colors duration-200">What do I need to provide to get started?</span>
+                        <span class="faq-icon transform transition-transform duration-300 text-2xl text-slate-400 group-hover:text-amber-300">+</span>
+                    </button>
+                    <div class="faq-answer text-slate-300 mt-3 text-base hidden leading-relaxed">
+                        <p>Our process is designed to be simple for you. The main thing we need is to talk with you to understand your tastes, preferences, and your vision for the store. We focus on capturing your idea to build a store that truly represents you and is 100% unique and branded. Our expert in-house team will take care of everything else, from design to product selection.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-slate-800 p-5 rounded-lg shadow-md">
+                    <button class="faq-question w-full text-left flex justify-between items-center text-lg font-semibold text-amber-400 focus:outline-none group">
+                        <span class="group-hover:text-amber-300 transition-colors duration-200">Will I have support after my store is delivered?</span>
+                        <span class="faq-icon transform transition-transform duration-300 text-2xl text-slate-400 group-hover:text-amber-300">+</span>
+                    </button>
+                    <div class="faq-answer text-slate-300 mt-3 text-base hidden leading-relaxed">
+                        <p>Absolutely! One of our biggest differentiators is the included lifetime support, with no additional charges or time limits. We won't leave you alone after delivery. Our team is very attentive, responds quickly, and is always available to answer all your questions. We will guide you step by step with patience, even if you have little experience.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-slate-800 p-5 rounded-lg shadow-md">
+                    <button class="faq-question w-full text-left flex justify-between items-center text-lg font-semibold text-amber-400 focus:outline-none group">
+                        <span class="group-hover:text-amber-300 transition-colors duration-200">Is the theme license included?</span>
+                        <span class="faq-icon transform transition-transform duration-300 text-2xl text-slate-400 group-hover:text-amber-300">+</span>
+                    </button>
+                    <div class="faq-answer text-slate-300 mt-3 text-base hidden leading-relaxed">
+                        <p>Yes, the commercial theme license is included in your package. Unlike other sellers who might use pirated themes, we guarantee professionalism and legality by using only themes for which we have a license.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-slate-800 p-5 rounded-lg shadow-md">
+                    <button class="faq-question w-full text-left flex justify-between items-center text-lg font-semibold text-amber-400 focus:outline-none group">
+                        <span class="group-hover:text-amber-300 transition-colors duration-200">Will my store be truly different from those of other clients?</span>
+                        <span class="faq-icon transform transition-transform duration-300 text-2xl text-slate-400 group-hover:text-amber-300">+</span>
+                    </button>
+                    <div class="faq-answer text-slate-300 mt-3 text-base hidden leading-relaxed">
+                        <p>Definitely. This is a key strength that addresses the perception of generic stores in the industry. All our stores are unique in design, theme, colors, text, and images. We have an in-house creative team of designers, copywriters, and developers who work to ensure this differentiation. We adapt each store to your tastes and preferences, creating a 100% unique and branded store. This allows your store to be an instrument of identification, helping you project the personality and role you desire in the market.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-12 md:py-16 bg-slate-900 text-center"> <div class="container mx-auto px-6">
+            <p class="mb-8 text-base md:text-lg text-slate-400 max-w-3xl mx-auto"> 
+                The future of Dropshipping in 2025 is NOW, and competition will be fierce. <br><strong>Don't get left behind. Launch with the confidence of experts.</strong>
+            </p>
+           <a href="#packages" class="btn-accent text-white font-bold py-4 px-10 rounded-lg text-xl md:text-2xl inline-block shadow-lg transform hover:scale-105">
+               🔥 Yes, I Want My UNIQUE and Profitable Store NOW!
+           </a>
+        </div>
+    </section>
+    <footer class="text-center py-8 bg-slate-900 border-t border-slate-700"> <p class="text-slate-400 text-sm md:text-base">
+            &copy; <span id="currentYear"></span> [Your Affiliate Website/Brand Name]. All rights reserved. <br class="sm:hidden">
+            <span class="text-xs">Proudly promoting Divishha's services.</span>
+        </p>
         <p class="text-xs md:text-sm text-slate-500 mt-1">Transforming Visions into Profitable Businesses.</p>
     </footer>
 
     <script>
         document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
         // Simple smooth scroll for internal links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
-                if (targetId === '#' || !targetId.startsWith('#')) return; // Ignore empty or external links
+                if (targetId === '#' || !targetId.startsWith('#')) return; 
                 try {
                     const targetElement = document.querySelector(targetId);
                     if (targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth'
+                        // Adjust for fixed header height if necessary
+                        const headerOffset = 50; // Height of the fixed top banner
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                        
+                        window.scrollTo({
+                             top: offsetPosition,
+                             behavior: "smooth"
                         });
                     }
                 } catch (error) {
@@ -536,24 +686,54 @@
         const imageModalImage = document.getElementById('image-modal-image');
         const modalCloseButton = document.getElementById('modal-close-button');
 
-        reviewScreenshots.forEach(image => {
-            image.addEventListener('click', () => {
-                imageModalImage.src = image.src;
-                imageModalOverlay.style.display = 'block';
-                imageModalContent.style.display = 'block';
+        if (reviewScreenshots.length && imageModalOverlay && imageModalContent && imageModalImage && modalCloseButton) {
+            reviewScreenshots.forEach(image => {
+                image.addEventListener('click', () => {
+                    imageModalImage.src = image.src; // Make sure your img tags have correct src attributes
+                    imageModalOverlay.style.display = 'block';
+                    imageModalContent.style.display = 'block';
+                    document.body.style.overflow = 'hidden'; // Prevent background scroll
+                });
             });
-        });
 
-        modalCloseButton.addEventListener('click', () => {
-            imageModalOverlay.style.display = 'none';
-            imageModalContent.style.display = 'none';
-        });
-
-        imageModalOverlay.addEventListener('click', (e) => {
-            if (e.target === imageModalOverlay) {
+            modalCloseButton.addEventListener('click', closeModal);
+            imageModalOverlay.addEventListener('click', (e) => {
+                if (e.target === imageModalOverlay) {
+                    closeModal();
+                }
+            });
+        }
+        
+        function closeModal() {
+            if (imageModalOverlay && imageModalContent) {
                 imageModalOverlay.style.display = 'none';
                 imageModalContent.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Restore background scroll
             }
+        }
+
+        // FAQ Toggle Functionality
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('.faq-icon');
+                
+                // Accordion behavior: Close other open FAQs
+                document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
+                    if (otherAnswer !== answer && !otherAnswer.classList.contains('hidden')) {
+                        otherAnswer.classList.add('hidden');
+                        const otherIcon = otherAnswer.previousElementSibling.querySelector('.faq-icon');
+                        if (otherIcon) otherIcon.textContent = '+';
+                    }
+                });
+
+                // Toggle current FAQ
+                answer.classList.toggle('hidden');
+                if (icon) {
+                    icon.textContent = answer.classList.contains('hidden') ? '+' : '−';
+                }
+            });
         });
     </script>
 
